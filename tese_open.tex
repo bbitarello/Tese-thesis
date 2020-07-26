@@ -1,0 +1,252 @@
+% Capa
+\begin{titlepage}
+\clearpage\thispagestyle{empty}
+\begin{center}
+\par
+\LARGE {\bf \nomedoaluno} \\
+\vspace\fill
+\Huge {\titulo} \\
+\vspace\fill \Large {\enquote{Balancing selection in the human genome: biological relevance and deleterious consequences}} \\
+%\vspace\fill \Large {"Instances of balancing selection in the human genome: biological relevance and maladaptive consequences}\\
+%\vspace\fill \Large {"Maladaptation as a consequence of adaptation: a genomic scale study} \\
+
+\vspace\fill
+\Large {\bf \advisor} \\
+\large {Orientador} \\
+\vspace\fill
+{\bf{\large São Paulo}\\
+  {\large \ano}}
+\end{center}
+\end{titlepage}
+
+
+\newpage
+\clearpage\thispagestyle{empty}
+\afterpage{\null\newpage} %add a blank page after the cover
+
+
+% Números das páginas em algarismos romanos
+\clearpage
+\pagenumbering{roman}
+%
+% Página de Rosto
+\begin{center}
+\LARGE{\nomedoaluno}
+\par
+\vspace\fill
+\Huge {\titulo}
+\end{center}
+\par
+\vspace\fill \hspace*{150pt}\parbox{9cm}{{\large Tese apresentada ao Instituto de Biociências da Universidade de São Paulo, para a obtenção de Título de Doutor em Ciências, na Área de Biologia (Genética).}}
+
+\par
+\vspace {1 cm}
+\hspace*{150pt}\parbox{9cm}{{\large Orientador: \advisor}}
+
+\par
+\vspace\fill
+\begin{center}
+\textbf{{\large São Paulo}\\
+{\large \ano}}
+\end{center}
+
+\newpage
+
+% Ficha Catalográfica
+\begin {center}
+Ficha Catalográfica \\
+\fbox{
+  \begin{minipage}{10cm}
+    Domingues Bitarello, Bárbara
+
+    \hspace{2em} \titulo.
+
+    \hspace{2em} \pageref{LastPage} páginas. %this is not working after I added gobble to appendix to remove page numbering.
+    
+    \hspace{2em}Tese (Doutorado) - 
+    Instituto de Biociências da Universidade de São Paulo. 
+    Departamento de Genética e Biologia Evolutiva.
+    
+    \begin{enumerate}
+    \item Evolução Molecular;
+    \item Evolução Humana;
+    \item Seleção Balanceadora;
+    \item Evolução Adaptativa;
+    \item Genética de Populações;
+    \item Genômica de Populações;
+    \item Carga Genética
+    \end{enumerate}
+    I. Universidade de São Paulo. 
+    Instituto de Biociências. 
+    Departamento de Genética e Biologia Evolutiva.
+  \end{minipage}
+}
+\par
+\vspace\fill
+{\LARGE\textbf{Comissão Julgadora:}}
+
+\par
+\vspace\fill
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}l l}
+\rule{16em}{1px} 	& \rule{16em}{1px} \\
+Prof. Dr. 		& Prof. Dr. \\
+ & \\
+\end{tabular*}
+
+\par
+\vspace\fill
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}l l}
+\rule{16em}{1px} 	& \rule{16em}{1px} \\
+Prof. Dr. 		& Prof. Dr. \\
+ & \\
+\end{tabular*}
+
+\par
+\vspace\fill
+
+\parbox{16em}{\rule{16em}{1px} \\
+Prof. Dr. \advisor }
+\end{center}
+
+\newpage
+
+% Dedicatória
+% Posição do texto na página
+\vspace*{0.75\textheight}
+\begin{flushright}
+  \emph{À memória de Maria Gabriela Duarte Macêdo (Kikita).}
+\end{flushright}
+
+\newpage
+
+
+% Epígrafe
+\vspace*{0.7\textheight}
+“We speak not only to tell other people what we think, but to tell ourselves what we think. Speech is a part of thought.” 
+%\emph{"Slow though the process of selection may be, if feeble man can do much by his powers of artificial selection, I can see no limit to the amount of change, to the beauty and infinite complexity of the coadaptations between all organic beings, one with another and with their physical conditions of life, which may be affected in the long course of time by nature's power of selection."}
+
+%\begin{flushright}
+%\emph {- Charles Darwin, 1859}
+\emph{-- Oliver Sacks}
+%\end{flushright}
+
+\newpage
+
+%Agradecimentos
+
+% Espaçamento duplo
+
+\noindent{\LARGE\textbf{Agradecimentos}}
+
+\medskip
+
+Às minhas amigas e amigos atemporais, que eu quase não vejo, mas que sempre torceram junto comigo a cada etapa na vida acadêmica até aqui: Laura Prado, Marcela Combat, Poliana Cardoso, Denise Nogueira, Luciana Matta, Ramon Vitral. Quero agradecer à Laura Prado por ter me ouvido e ter dado muitas dicas úteis nos meses finais do doutorado.
+
+Tenho o privilégio de ter trabalhado em um ambiente muito agradável (o Porão). Agredeço ao Pato (Guilherme Garcia) por ter me dado várias dicas sobre formatação da tese, e por ter cedido seu template de \LaTeX (e à Débora Brandt também): graças a vocês eu pude desenvolver exatamente o que eu queria, sem gastar tempo desnecessário. Agradeço Daniela Rossoni, Bárbara Tafinha, Ana Paula Assis e Anna Penna pela amizade. Ao meu colega Gustavo Franca por ter me dado muitas dicas perto do fim do doutorado, fora o reforço positivo. Agradeço ao Diog(R)o Melo por ter me ajudado com questões de Linux. Finalmente, agradeço a oportunidade de trabalhar com todos dos grupos do professor Gabriel Marroig e da professora Tatiana Torres, bem como outros grupos que participam dos encontros Evolução no Porão.
+     
+Aos meus colegas do grupo de Genética Evolutiva: sou muito grata a todos. Foi um prazer trabalhar com um grupo colaborativo como o nosso e ver o quanto pudemos crescer juntos. Ao Vitor Aguiar por ter me escutado muito (mas muito mesmo) e por sempre ser tão gentil. Ao Jônatas, pela generosidade com seus \emph{scripts} e por me apresentar a Tia das Massas. Sou grata pelo quanto me ajudou a programar melhor e por sua enorme contribuição com as análises do Capítulo 2. Agradeço o incentivo do Limão aos meus \emph{hobbies} musicais e por ter ajudado a achar erros nos dados usados no Capítulo 2. À Maria Helena Maia, que foi uma irmã durante meu mestrado e início do doutorado.
+
+Agradeço especialmente à Kelly Nunes e à Débora Brandt. À Kelly por ser minha sábia pós-doc de plantão, e sempre ter transmitido calma e entusiasmo quando eu precisei. Obrigada especialmente por ter lido muitas partes da tese com carinho e ter me ajudado muito a aprimorá-la. À Débora Brandt, quero agradecer por sua amizade, generosidade e o quanto me ajudou com a qualidade dos dados que analisei, além de sua ajuda corrigindo diversos trechos da tese. Algumas outras pessoas que gostaria de agradecer: Caroline Lima, Carolina Malcher, Rodrigo dos Santos Francisco.
+
+Aos amigos/colegas/colaboradores que fiz em Leipzig: Cesare de Filippo, João Teixeira, Michael Dannemann, André Strauss, Sandra Oliveira, Diana LeDuc, Fabrizio Manfezzoni, Felix Key, Petra Korlevic. Não apenas pude aprender com vocês, mas vocês fizeram minha estadia em Leipzig ser melhor. Ao Stéphane Peyregné, que me revelou que trabalhar ouvindo trilha sonora da Disney (agradeço vocês também, Disney) aumenta a produtividade. À Annalisa Schmidt, por ser uma amiga muito presente durante meu ano em Leipzig. Teria sido muito menos legal sem você lá. 
+
+Gostaria de agradecer especialmente à pesquisadora Aida Andrés. Passei um ano com seu grupo no Max Planck Institute for Evolutionary Anthropology, onde aprendi mais do que eu poderia antever. Gostaria de agradecer especialmente pela confiança que teve em mim desde o início, e também por sua calma. Nessa etapa do trabalho eu tive, efetivamente, dois orientadores. É um privilégio que nem todos os alunos de doutorado têm, e sou muito grata.
+
+Gostaria de agradecer a alguns professores e/ou membros da minha banca de qualificação, que considero terem contribuído muito para minha formação ao longo de toda a pós-graduação: Tatiana T. Torres, Walter A. Neves, Gabriel Marroig, Paulo Otto. Sou grata ao professor Eduardo Tarazona, que me apresentou ao Diogo Meyer.
+
+Ao meu orientador, Diogo Meyer, agradeço por ter me ajudado a aprender o máximo possível ao longo desses sete (!) anos de pós-graduação na USP e às oportunidades que me proporcionou. Eu cheguei aqui sem saber muita coisa, exceto que queria estudar genética de populações humanas, e você me proporcionou estudar exatamente o que eu queria. Concluir essa etapa da minha formação é um "sonho" que nutro desde muito jovem, e você foi uma pessoa muito importante ao longo desta trajetória. 
+
+À Ale Chris, com quem eu pude contar absolutamente sempre que precisei. Agradeço eternamente por tê-la como amiga, e por sua enorme generosidade. Agradeço também à Gisele Melo pela amizade.
+
+%À Klervia, por ter me ensinado a ser mais diligente com o trabalho,por ter me jogado pra cima todas as vezes que eu tive síndrome do impostor e por ter se voluntariado pra me escutar praticar minha qualificação diversas vezes por skype, de madrugada. Obrigada também por ler meus relatórios e manuscritos e ficar genuinamente interessada pelos mecanismos da seleção balanceadora. Finalmente, obrigada por sempre ter demonstrado completa confiança em mim e pela sua paciência.
+
+À Klervia Jaouen, obrigada pela sua confiança inabalável em mim, pela paciência, compreensão e por sua disposição em me ajudar, sempre, seja ouvindo ensaios de apresentação, seja lendo o que eu escrevi (e tudo isso em português, sua terceira, e ainda incipiente, língua). Obrigada por me fazer feliz e querer ser uma pessoa melhor, sempre.
+
+À minha avó, Tê, por todo o suporte que sempre me deu. Aos meus pais, Bia e Flávio, e aos meus segundos pais, Beth e Joe: obrigada por serem ótimos exemplos pra mim, todos vocês, e por sempre terem me incentivado a seguir essa carreira. Agradeço à minha mãe por ter lido e comentado a introdução (sei que não foi fácil) e por ter sido compreensiva e sempre ter me ajudado e lidar com a vida acadêmica. Agradeço finalmente à minha irmã, que foi muito compreensiva com a minha necessidade de reclusão nos últimos meses e sempre menteve um reconfortante interesse pelas coisas científicas e \emph{nerds}. A todas as pessoas que eu porventura tenha esquecido de agradecer, obrigada.
+
+Finalmente, agradeço à Fundação de Amparo à Pesquisa do Estado de São Paulo (FAPESP) por ter me financiado no doutorado, incluindo o periodo que passei em Leipzig.
+
+\newpage
+%
+\clearpage
+
+\vspace*{10pt}
+\begin{center}
+  \emph{\begin{large}Resumo\end{large}}\label{resumo}
+\vspace{2pt}
+\end{center}
+
+\noindent
+\par
+\vspace{1em}
+\onehalfspace
+\begin{small}
+Seleção balanceadora é um processo evolutivo que engloba diversos mecanismos: vantagem do heterozigoto, seleção dependente de frequência, pressões seletivas que variam ao longo do tempo ou do espaço, e alguns casos de pleiotropia. O estudo desses mecanismos em si foi e ainda é um tópico de grande interesse para os biólogos evolutivos, e moldou o estudo da evolução ao longo do último século. Antes de a teoria neutra ter sido proposta, acreditava-se que a seleção balanceadora fosse comum. A descoberta de que muita da diversidade genética observada podia ser explicada por evolução neutra motivou, portanto, uma melhor compreensão da seleção balanceadora como um regime seletivo capaz de manter variantes vantajosas nas populações.
+
+O estudo da seleção balanceadora, em seus primórdios, foi restrito a organismos que podiam ser manipulados em laboratório. Com o advento de métodos que permitiam quantificar a variabilidade genética -- tais como a eletroforese de proteínas, sequenciamento em pequena escala e re-sequenciamento genômico de milhares de indivíduos --, a variabilidade genética humana passou a ser ativamente estudada e interpretada. Diversos estudos buscaram por assinaturas de seleção natural -- i.e., padrões de variação genômica deixadas por tais regimes seletivos -- e avaliaram seu significado comparando-as com o que seria esperado sob um cenário estritamente neutro. A maior parte desses esforços foram concentrados no estudo da seleção positiva, tida como o principal mecanismo responsável pela evolução adaptativa. 
+
+Poucos estudos buscaram assinaturas de seleção balanceadora no genoma humano. Isso se deve em parte à escassez de métodos com alto poder para detectar tais assinaturas. Adicionalmente, estudos prévios  não analisaram dados em escala genômica, ou se concentraram principalmente nas regiões codificadoras de proteínas.  Aqui, nós descrevemos um método simples e com alto poder para detectar assinaturas de seleção balanceadora. Em humanos, esse método supera outros  comumente usados para a detecção de tais assinaturas e, em teoria, poderia ser usado para detectá-las em outras espécies, desde que seu poder seja avaliado caso-a-caso através de simulações neutras. Nosso método (\enquote{\emph{Non-Central Deviation}}, NCD) é apresentado em duas versões: $NCD2$, que requer informação acerca dos polimorfismos da espécie analisada e  das substituições entre essa espécie e um grupo externo, e $NCD1$, que requer apenas informação acerca dos polimorfismos da espécie analisada. Embora em humanos $NCD2$ supere $NCD1$, este último pode ser utilizado para espécies para as quais não haja informação de um grupo externo.
+
+Quando aplicamos $NCD2$ a dados humanos, usando chimpanzé como grupo externo, encontramos mais de 200 genes codificadores de proteínas com forte assinatura de seleção balanceadora, dos quais apenas 1/3 tinha evidência prévia de seleção balanceadora. Encontramos também um enriquecimento para diversas categorias de ontologia gênica, das quais cerca da metade é relacionada à imunidade. Verificamos que dentre os genes com evidências de seleção balanceadora há um excesso de casos de expressão preferencial em tecidos tais como \enquote{adrenal} e \enquote{pulmão}, e também um excesso de genes com expressão mono-alélica. No geral, vimos que as regiões selecionadas no genoma humano incluem tanto sítios codificadores quanto regulatórios. Não encontramos um excesso de assinaturas de seleção balanceadora em regiões regulatórias, ao contrário do que reportaram outros estudos. Finalmente, encontramos um excesso de polimorfismos não-sinônimos em relação aos sinônimos nos genes selecionados.
+
+Tendo documentado a ocorrência de seleção balanceadora no genoma humano e identificado genes que foram potencialmente alvos deste regime seletivo, nós investigamos as consequências evolutivas desse processo. Nós partimos da hipótese que a seleção balanceadora sobre um sítio reduz a eficiência com a qual a seleção purificadora elimina variantes deletérias em sítios vizinhos. Esse processo é uma consequência do quanto a seleção sobre um loco afeta, através de ligação genética, as frequências de sítios não-neutros adjacentes. Testamos essa hipótese examinando se os genes sob seleção balanceadora apresentam um excesso de variantes deletérias em relação a expectativas derivadas a partir do restante do genoma. Usando três diferentes métricas para determinadas se e/ou o quão deletéria é uma dada variante, identificamos um excesso de variantes deletérias dentro dos genes sob seleção balanceadora, e mostramos que tal padrão não pode ser atribuído a efeitos confundidores. Esse achado mostra que, juntamente com os benefícios associados à variação adaptativa, a seleção balanceadora aumenta o fardo de mutações deletérias no genoma humano. 
+
+De forma geral, nossos achados sugerem que a seleção balanceadora provavelmente mantém variantes genéticas envolvidas em uma miríade de processos biológicos além da imunidade e que ela foi mais comum no genoma humano do que se acreditava anteriormente, afetando entre 1-8\% dos genes codificadores de proteínas, bem como diversas regiões não-codificadoras. Adicionalmente, a seleção balanceadora parece ser importante para a evolução humana não apenas por seu efeito sobre a aptidão, mas também por ter sido uma importante força capaz de moldar a diversidade genética observada atualmente em humanos e a susceptibilidade a doenças. 
+
+\vspace{1em}
+\noindent\textbf{Palavras-chave:} evolução molecular, evolução humana, seleção balanceadora, evolução adaptativa, genética de populações, genômica de populações, carga genética
+\end{small}
+
+\newpage
+\vspace*{10pt}
+\begin{center}
+  \emph{\begin{large}Abstract\end{large}}\label{abstract}
+\vspace{2pt}
+\end{center}
+
+\selectlanguage{english}
+\noindent
+
+\par
+\vspace{1em}
+\onehalfspace
+\begin{small}
+
+
+Balancing selection is an evolutionary process that encompasses several mechanisms: heterozygote advantage, negative frequency dependent selection, selective pressure that fluctuates in time or in space, and some cases of pleiotropy. The study of these mechanisms \emph{per se} has been and still is a topic of great interest for evolutionary biologists, and has shaped the study of evolution throughout the last century. Before the proposition of the neutral theory of molecular evolution, it was believed that balancing selection was pervasive. The realization that much of the observed genetic diversity could be explained by neutral evolution thus motivated a better understanding of balancing selection as a selective regime capable of maintaining adaptive variants in populations.
+
+
+The study of balancing selection, in its early stages, was restricted to organisms that could be manipulated in the laboratory. With the advent of methods that allowed quantification of genetic variation -- such as protein electrophoresis, small scale sequencing and genome-wide re-sequencing of thousands of individuals -- human variation started to be actively studied and interpreted. Several studies have looked for signatures of natural selection -- i.e., patterns of genomic variation that selective regimes leave in the genome -- and evaluated their significance by comparing them to what would be expected under a strictly neutral scenario. Most of these efforts focused on the study of positive selection, thought of as the prime mechanism responsible for adaptive evolution. 
+
+Only a few studies looked for signatures of balancing selection in the human genome. This is partially due to the paucity of powerful methods to detect its signatures. Moreover, previous studies either did not analyze data on genomic scale or focused primarily on protein-coding regions. Here, we describe a powerful and simple method to detect signatures of balancing selection. In humans, it outperforms other methods commonly used to detect such signatures and could in theory be used for other species, provided that its power is evaluated for each species through neutral simulations. Our method ("Non-Central Deviation", NCD) has two versions: $NCD2$, which requires polymorphism information on the ingroup species, as well as divergence information between the ingroup and an outgroup species, and $NCD1$, which only requires the ingroup information. Although $NCD2$ is more powerful for humans, $NCD1$ can be used for species that lack information from an outgroup.
+
+When applying $NCD2$ to human data, using chimpanzee as the outgroup, we found more than 200 protein-coding regions with strong signatures of balancing selection, only 1/3 of which had prior evidence for balancing selection. There was also an enrichment for several gene ontology categories, approximately half of which are related to immunity. We also found that among genes with evidence for balancing selection there was an excess of cases of preferential expression in specific tissues, such as "adrenal" and "lung", and an excess of genes with mono-allelic expression. Overall, we found that selected regions of the genome include both coding and regulatory sites. We failed to find a marked excess of balancing selection in regulatory regions, as reported in previous studies. Finally, we found an excess of nonsynonymous versus synonymous polymorphisms within the selected genes.
+
+Having documented the occurrence of balancing selection in the human genome and identified genes which were potential targets of this selective regime, we next investigated evolutionary consequences of this process. We hypothesized that balancing selection acting on a site reduces the efficiency with which purifying selection purges deleterious variants at nearby sites. This process is a consequence of how the dynamics of selection at one locus, mediated by linkage, can interfere with the frequencies of adjacent non-neutral sites. We tested this hypothesis by examining if the genes under balancing selection show an excess of deleterious variants with respect to expectations derived from the remainder of the genome. Using three different metrics to determine deleteriousness , we identified a significant excess of deleterious variants within balanced genes, and we show that this pattern cannot be attributed to confounding factors. This finding shows that together with the benefits associated with adaptive variation, balancing selection is increasing the burden of deleterious mutations in the human genome. 
+
+Overall, our findings suggest that balancing selection likely maintains variation in a myriad of biological processes other than immunity and that it has been more common in the human genome than previously thought, affecting between 1-8\% of human protein-coding genes, as well as a number of non-protein coding regions. Moreover, balancing selection appears to be important to human evolution not only because of its influence on fitness, but also because it has been an important force shaping current human genetic diversity and susceptibility to disease.
+
+\vspace{1em}
+\noindent\textbf{Keywords:} molecular evolution, human evolution, balancing selection, adaptive evolution, population genetics, population genomics, genetic load
+\end{small}
+
+\selectlanguage{brazilian}
+
+\newpage
+
+% Índice
+
+\phantomsection
+\tableofcontents
+%\listoffigures
+%\listoftables
+\newpage
+
+\pagenumbering{arabic}
+\pagestyle{fancy}
+\def\sectionautorefname{Seção}
+\def\chapterautorefname{Capítulo}
+\def\figureautorefname{Figura}
+\def\tableautorefname{Tabela}
+
+\onehalfspacing

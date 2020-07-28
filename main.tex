@@ -3,14 +3,14 @@
 
 % --- definições ---
 %titulo provisório
-\newcommand{\titulo}{"Seleção balanceadora no genoma humano: relevância biológica e consequências deletérias"}
+\newcommand{\titulo}{"Título da tese em português"}
 
-\newcommand{\nomedoaluno}{Bárbara Domingues Bitarello}
-\newcommand{\advisor}{Diogo Meyer} \newcommand{\ano}{2016}
+\newcommand{\nomedoaluno}{SEU NOME COMPLETO AQUI}
+\newcommand{\advisor}{Diogo Meyer} \newcommand{\ano}{ANO DA DEFESA AQUI}
 \hypersetup{colorlinks=true, linkcolor=black, citecolor=black,
   filecolor=black, pagecolor=black, urlcolor=black,
   pdfauthor={\nomedoaluno}, pdftitle={\titulo}, pdfsubject={Genética e
-    Biologia Evolutiva}, pdfkeywords={Genética de Populações, Seleção Balanceadora, Evolução Humana, Evolução Adaptativa, Genética de Populações, Genômica de populações}, pdfproducer={Latex}, pdfcreator={pdflatex}}
+    Biologia Evolutiva}, pdfkeywords={,,,,,,}, pdfproducer={Latex}, pdfcreator={pdflatex}}
  
 \def\chapterautorefname {Capítulo}
 \def\appendixautorefname {Apêndice}
@@ -32,22 +32,14 @@
 
 \renewcommand{\thesubfigure}{\alph{subfigure}} 
 \makeatletter 
-%\renewcommand{\p@subfigure}{} 
-%\renewcommand{\@thesubfigure}{\thesubfigure:\hskip\subfiglabelskip} 
 \makeatother 
 
 \renewcommand{\thesubtable}{\alph{subtable}} 
 \makeatletter 
-%\renewcommand{\p@subtable}{} 
-%\renewcommand{\@thesubtable}{\thesubtable:\hskip\subfiglabelskip} 
 \makeatother 
 
 \titleformat{\chapter}[display]
   {\normalfont\Huge\bfseries\color{airforceblue}}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
-
-%\titleformat{\chapter}[display] 
-%{\normalfont\huge\bfseries\singlespacing}{\chaptertitlename\ \thechapter}
-%{20pt}{\Huge}
 
 \titleformat{\section}
 {\normalfont\LARGE\bfseries\filcenter\color{airforceblue}}{\singlespacing\thesection}{1em}{}
@@ -70,7 +62,6 @@
 
 \pagestyle {fancy}
 
-%\input {tese_open}
 
 \doublespacing
 
@@ -78,7 +69,6 @@
 
 \input {chap1_folder/chap1_intro}
 
-%\counterwithout{figure}{chapter}
 \input {chap2_folder/chap2}
 
 \input {chap3_folder/chap3}
@@ -87,8 +77,5 @@
 
 \newpage
 
-%\appendix
-
-%\input {Appendix/apps.tex} %uncomment this to include appendix.
 
 \end {document}

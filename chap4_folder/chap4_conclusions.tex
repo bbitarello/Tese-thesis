@@ -10,124 +10,42 @@
 
 \lettrine[lines=3]{\color{airforceblue}A}{}qui, eu recapitulo as questões que propus abordar na Introdução (página \pageref{subsec:Perguntas}), resumo as conclusões a que chegamos com as investigações dos Capítulos 1 e 2, e discuto perspectivas decorrentes destes trabalhos.
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Seleção balanceadora no genoma humano}
+\section{Um subtítulo}
 
-\subsection{Desenvolvimento e avaliação de um novo método para a detecção de assinatura de seleção balanceadora}
+\subsection{Um subsubtítulo}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-No Capítulo 1, descrevemos um novo método para detecção de assinaturas de seleção balanceadora de longo prazo (SBLP) em humanos: \emph{Non-Central Deviation} (NCD). Esse método apresenta duas estatísticas: \emph{NCD}1 utiliza apenas  o espectro de frequências alélicas, ao passo que \emph{NCD}2  usa também informação contida na divergência entre humanos e chimpanzés. A combinação de duas assinaturas de SBLP em \emph{NCD}2 confere maior poder em relação a \emph{NCD}1. Apesar disso, a performance de \emph{NCD}1 é comparável à de outros métodos comumente usados para detectar genes ou regiões sob seleção natural e recomendamos que seja utilizada em  espécies para as quais dados de divergência com espécies próximas não estejam disponíveis.
-
-Através de simulações neutras e com seleção, baseadas num modelo detalhado de demografia humana, demonstramos que o poder das duas estatísticas é alto para detectar assinaturas de SBLP em populações africanas e europeias, para sequências não muito longas (<= 6.000 pares de base). Avaliamos qual a combinação de possíveis implementações que maximiza o poder das estatísticas e vimos que, para seleção que surgiu há pelo menos 3 milhões de anos, o método \emph{NCD}2 tem maior poder para sequências de 3.000 pares de base. Para seleção mais recente (isto é, que teve início há menos de 1 milhão de anos), \emph{NCD}1 tem poder maior que \emph{NCD}2, mas como os valores em geral são baixos, na ordem de 30-40\% (para taxa de falso positivo de 5\%), enfatizamos que ambas as estatísticas são indicadas para a detecção de eventos de seleção balanceadora que perduram há pelo menos 3 milhões de anos (em humanos). Além disso, mostramos que a performance de \emph{NCD}2 supera a de outros métodos já existentes: \emph{D} de Tajima (\cite{tajima1989statistical}), teste HKA (\cite{Hudson1987}), testes T1 e T2 (\cite{DeGiorgio2014}), e uma combinação de \emph{NCD1}+HKA.
-
-Um diferencial das nossas estatísticas em relação às já existentes é que nela pode-se definir uma \enquote{frequência-alvo} (\emph{target frequency}) a partir da qual o desvio de frequências alélicas é calculado. Isto é, a estatística pode ser calculada assumindo-se que os polimorfismos balanceados estejam segregando em frequências diferentes de 0.5. Na avaliação de poder, consideramos as frequências 0.3, 0.4 e 0.5. Com as simulações, vimos que o ganho em poder de \emph{NCD}1 e \emph{NCD}2 em relação às outras estatísticas é maior quando frequências de equilíbrio diferentes de 0.5 são simuladas. Assim, mostramos que \emph{NCD}2 tem poder maior do que as outras estatísticas usadas para detectar assinaturas de seleção balanceadora. 
-
-É importante ressaltar que o poder foi avaliado no contexto de um modelo demográfico para populações humanas que é bastante complexo e realista (\cite{Gravel2011}). Isso sugere que a observação de que nosso método supera os outros não é restrita a um cenário não-realista, mas baseada nos padrões de polimorfismo previstos em humanos.
-
+Conteúdo em português.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Prevalência de SBLP no genoma humano}
+\subsection{Outro subtítulo}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-Há ainda considerável controvérsia sobre a importância da seleção balanceadora como processo microevolutivo que molda a diversidade genética humana (\cite{Andres2009,Bubb2006,Leffler2013a}). Ele é raro, envolvendo poucas regiões genômicas? É mais comum atuar em regiões codificadoras de proteína ou regulatórias? Quais funções exercem os genes sob seleção balanceadora? O regime é partilhado entre populações distintas? O método que desenvolvemos tem como motivação contribuir para a resolução dessas questões.
-
-As análises do Capítulo 1 mostram que, para humanos, a performance de \emph{NCD}2 é melhor do que a de \emph{NCD}1. Assim, calculamos \emph{NCD}2 para janelas de 3.000 pares de bases ao longo de todo o genoma. Usamos dados genômicos de 4 populações (duas africanas, duas europeias) do Projeto 1000 Genomas. Como na prática não se sabe em qual frequência os polimorfismos balanceados estão segregando, calculamos \emph{NCD}2 considerando três frequências-alvo (0.3, 0.4, 0.5) e combinamos os resultados. Tomamos cuidado especial em filtrar os dados \emph{a priori}, removendo regiões que poderiam ter assinaturas semelhantes às esperadas sob seleção balanceadora, mas por outras causas. Essas incluem regiões
-com motivos em \emph{tandem}, grandes duplicações cromossômicas, regiões que não têm ortologia com chimpanzés e que não são únicas.
-
-A fim de determinar os prováveis alvos de seleção balanceadora, combinamos duas estratégias: (1) um critério de significância baseado em simulação, em que uma janela é considerada significativa se seu valor de \emph{NCD}2 para uma dada frequência-alvo é menor do que aquele de 10.000 simulações neutras com número igual de sítios informativos (resultando em cerca de 0,50\% das janelas por população, considerando a união de todas as frequências-alvo) e; (2) um critério de \emph{ranking} na distribuição genômica, após a aplicação de uma correção que leva em conta o número de sítios informativos da janela. Com o segundo critério, definimos como \emph{outliers} as janelas na cauda da distribuição empírica (0,05\%), que é basicamente um subconjunto das janelas obtidas com o primeiro critério.
-
-Finalmente, reportamos como genes \emph{outlier} aqueles que têm pelo menos uma janela \emph{outlier} (independente da frequência-alvo) em pelo duas populações do mesmo continente. Com isso, esperamos reduzir os falsos positivos que poderiam ter surgido devido a alguma propriedade dos dados de uma certa população, dado que, na escala de tempo que investigamos, esperamos que populações de um mesmo continente tenham compartilhado pressões seletivas, bem como história demográfica. Nossos resultados mostraram que  pelo menos 1\% dos genes do genoma têm assinaturas extremas de seleção balanceadora (\emph{outlier}), mas talvez mais, podendo chegar até 8\% (Tabela S8, Capítulo 1). Mesmo a estimativa mais conservadora de 1\% é bem mais alta do que o que já tinha sido observado até hoje. Por exemplo, apenas  0.4\% dos 13.500 genes analisados por \textcite{Andres2009} apresentaram fortes assinaturas de seleção balanceadora. O fato de nossa estimativa ser mais alta é provavelmente decorrente de múltiplos fatores: o alto poder de \emph{NCD}2, os dados genômicos utilizados, o fato de mesmo com todos os nossos filtros termos retido mais de 18.000 genes autossômicos nas análises e o fato de as janelas analisadas serem pequenas, o que aumenta a probabilidade de detectar uma assinatura de SBLP \parencite{Andres2011,Charlesworth2009}. 
-
-% como o critério requer partilhamento entre pops, talvez lá nos objetivos devamos dizer que o interesse geográfico é avaliar o partilhamento de regimes seletivos entre populações de continentes diferentes.
-
-Nosso estudo pôde identificar genes com assinaturas extremas e  reportou o quão prevalente a seleção balanceadora pode ter sido na história evolutiva humana. Dentre os 213 genes com assinaturas extremas de SBLP,  30\% já foram detectados em algum \emph{scan} prévio e outros (pelo menos quatro) estudos de genes candidatos. Ou seja, cerca de 70\% dos genes que apresentamos são novos na literatura de seleção balanceadora. Adicionalmente, a nossa lista mais inclusiva (i.e, menos conservadora) de 1.470 genes com assinaturas menos extremas indica que talvez a SBLP tenha sido ainda mais comum. 
-
+Conteúdo aqui.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Partilhamento entre continentes} %%%%
+\subsection{Mais um} %%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-Boa parte dos das janelas candidatas é compartilhada entre ao menos duas das populações analisadas (87\%), particularmente entre populações do mesmo continente (78\%). Mesmo nos casos em que um gene não passa o critério de pertencer aos dois continentes, a grande maioria tem assinaturas em ambos os continentes (ou seja, em pelo menos 3 das quatro populações analisadas), com raras exceções. Finalmente, cerca de  32\% dos genes \emph{outlier} (69 genes, Tabela 3, Capítulo 1) são partilhados entre as quatro populações. 
-
-Nossos achados confirmam que o grau de compartilhamento entre populações de um mesmo continente é maior do que entre populações de continentes distintos. Tal observação pode ser interpretada como um compartilhamento de pressões seletivas históricas, bem como de fatores demográficos em comum, que influenciam a variabilidade genética que fica disponível para a atuação da seleção balanceadora. 
-
-O fato de muitos dos alvos -- genes e janelas -- serem compartilhados entre continentes é compatível com a escala de tempo do regime seletivo que investigamos (>= 3 milhões de anos). Mesmo que, na história humana recente, África e Europa tenham divergido em diversos aspectos -- em termos de história demográfica e de pressões seletivas -- é plausível  que muitos alvos de seleção balanceadora de longo prazo tenham sido mantidos em ambas, e/ou que tenham cessado de ser selecionados em um dos continentes apenas recentemente, preservando assim as assinaturas de SBLP até o presente.
-
-
+Conteúdo aqui.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Características das regiões candidatas}
+\subsection{Eita, mais um}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Resposta imune}
+\subsubsection{Subtítulo do eita mais um}
 
-	Observamos um enriquecimento para certas categorias funcionais entre os genes significativos e \emph{outliers}. Cerca de metade das categorias enriquecidas são relacionados à resposta imune, de forma ampla, e dessas, cerca de metade  é diretamente ligada à apresentação de antígenos por moléculas HLA. 
-
-Evidências de seleção balanceadora em diversos genes HLA clássicos de classe I e II são abundantes na literatura. De fato, eles estão contidos nas janelas significativas  e também nas  \emph{outlier}, que têm as assinaturas mais extremas. Portanto, investigamos se os genes HLA estariam causando os enriquecimentos de categorias relacionadas ao sistema imune. A remoção de tais genes levou à observação de que nenhuma categoria permaneceu enriquecida para os genes \emph{outlier}, o que demonstra, em primeiro lugar, a grande influência dos genes HLA no conjunto mais restrito de genes candidatos e, em segundo lugar, que o conjunto de dados restante é pequeno (em média 177 genes por população), o que pode acarretar perda de poder pra testes que visam detectar enriquecimento de alguma classe funcional entre os genes selecionados (mesmo categorias que não são compostas exclusivamente por genes HLA deixam de ser significativas com a remoção dos mesmos).
-% alguém poderia confundir os testes aos quais você se refere com o seu teste.
-%BDB: não entendi seu comentário.
-
-Por outro lado, é interessante observar que mesmo após a remoção dos genes HLA clássicos, algumas categorias funcionais permaneceram enriquecidas para os genes significativos, algumas delas relacionadas ao sistema imune, mas envolvendo outros genes, incluindo genes HLA não-clássicos. De fato, 1/3 dos genes significativos são relacionados a funções imunes, mesmo que não componham categorias enriquecidas. Entre as outras categorias, temos por exemplo \enquote{região extra-celular}, que confirma a observação de que tende a haver um excesso de genes relacionados à matriz extracelular entre os alvos de SBLP em humanos (revisado em \cite{Key2014b}).
-
-Corroboramos, assim, que a resposta imune é uma importante pressão seletiva responsável por instâncias de seleção balanceadora, e detectamos fortes assinaturas em alguns genes candidatos relacionados à reprodução. Cinco genes significativos são relacionados à espermatogênese, embora não haja enriquecimento para a categoria, e um dos 10 genes mais extremos (\emph{C1orf101}) é altamente expresso em testículo e, embora tenha função ainda desconhecida, há indícios de que poderia estar relacionado ao complexo \emph{CATSPER} de canais de Ca\textsuperscript{+2}, que são cruciais para a sinalização na superfície celular que leva à fertilização. Em suma, embora estas duas pressões seletivas de inegável importância (defesa do organismo e reprodução) não aparentam estar por trás da \emph{maioria} dos alvos de SBLP, elas estão envolvidas em mais de 1/3 dos genes com assinaturas mais fortes de SBLP.
+\subsubsection{Outro subtítulo}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Confiabilidade acerca dos alvos de SBLP}%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-Outra categoria de genes enriquecida entre os candidatos são os receptores olfatórios. Trata-se de uma família gênica complicada de se analisar pois 
-são o resultado de diversas duplicações. Nossas análises não permitem excluir as hipóteses de que: a) as assinaturas de SBLP nesses genes sejam causadas por
-conversão gênica entre parálogos situados próximos uns aos outros (trata-se de um fenômeno biológico, porém diferente de seleção balanceadora, capaz de gerar assinatura semelhante); b) que o excesso de SNPs com frequências intermediárias nesses genes seja decorrente de \emph{reads} de genes distintos porém com alta identidade terem sido mapeados a uma só gene no genoma referência, assim inflando artificialmente a frequência de alelos em frequência intermediárias. 
-
-Seria plausível supor que ambos os artefatos -- um deles causado por um fenômeno biológico, e o outro por problemas de bioinformática de dados de sequenciamento -- poderiam estar ocorrendo de forma mais generalizada nos nossos genes candidatos. A fim de verificar a credibilidade das regiões candidatas quanto à questão de conversão gênica entre parálogos situados próximos um ao outro, comparamos a distribuição de número de casos em que parálogos por gene candidato estão situados no mesmo cromossomo (possibilitando, assim, a conversão não-homóloga), e comparamos com a distribuição para todos os outros genes. Vimos que as distribuições são essencialmente idênticas, e que portanto nossos genes candidatos não tendem a ter mais parálogos situados no mesmo cromossomo, de forma geral. Como a conversão gênica não-homóloga ocorre entre genes homólogos, a proximidade física é necessária. 
-
-% Faltou só a frase dizendo o que esse achado implica sobre a questão levantada. Não será óbvio par todas qual a conexão entre parálogos nomesmo cromossomo e conversão. É isso que merece uma frase.
-%BDB; ok.
-
-A respeito de duplicações não detectadas, tomamos quatro dos 10 genes com assinaturas mais extremas (dentre os que nunca apareceram em outros estudos de seleção balanceadora) e verificamos que poucos SNPs contidos nesses genes podem ser artefatos gerados por duplicações não detectadas, e que mesmo excluindo tais SNPs, os genes em questão continuam tendo assinaturas extremas de SBLP. Finalmente, dos 213 genes com assinaturas mais extremas, apenas dois são receptores olfatórios (Tabela 3, Capítulo 1), o que implica que: (1) é plausível que não sejam falsos positivos, dados todos os cuidados que tomamos, mas não podemos descartar essa possibilidade; (2) nossas verificações nos deixam confiantes de que vieses desse tipo não são uma característica dos genes candidatos de forma geral.
-
-
-
+Conteúdo aqui.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Regiões regulatórias \emph{versus} regiões codificadoras de proteínas}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-Em um \emph{scan} para polimorfismos balanceados partilhados entre humanos e chimpanzés, \textcite{Leffler2013a} reportaram que, de 125 haplótipos compartilhados entre humanos e chimpanzés -- interpretado como uma assinatura de SBLP -- 123 ocorrem em regiões genômicas não-gênicas. Combinando-se essa observação com o fato de há poucos casos descritos de genes-alvo de SBLP, seria plausível supor que a maior parte dos sítios-alvo de seleção balanceadora fossem regulatórios. No nosso estudo, vimos que embora as janelas significativas representem apenas cerca de 0,5\% das janelas analisadas, elas correspondem a cerca de 8\% dos genes codificadores de proteínas. Por outro lado, não detectamos proporcionalmente mais janelas que incluem genes entre as significativas quando comparadas às não-significativas. 
-
-A fim de explorar se a SBLP tende a ocorrer sobre sítios regulatórios, investigamos se havia um excesso de SNPs com função regulatória nas janelas significativas. A princípio vimos que esse excesso -- altamente significativo (Figura 7, Capítulo 1) -- existe para SNPs que possuem diversas funções regulatórias, inclusive a de eQTL. Entretanto, SNPs sem anotação de eQTL mas com outras funções regulatórias não apresentam enriquecimento. Por fim, pudemos determinar que, considerando apenas SNPs com frequência intermediária, não existe enriquecimento para eQTLS, mostrando que uma anotação positiva para eQTLs é correlacionada positivamente à frequências dos mesmos. Nosso achado mostra que, como há um excesso de variantes segregando em frequência intermediária em regiões sob seleção balanceadora, o enriquecimento de traços genômicos para os quais a detecção é sensível à frequência alélica (como é o caso de eQTLs) será enviesado. Finalmente, detectamos um excesso de SNPs sem qualquer anotação de função regulatória nas janelas candidatas.
-
-
-Apesar dessa ausência de evidência de excesso de enriquecimento para SNPs com funções regulatórias entre as janelas mais extremas, detectamos um sutil, porém significativo, enriquecimento para  expressão mono-alélica (MAE) entre os 213 genes com assinaturas mais extremas de SBLP  \parencite{Savova2016}.  Um estudo recente (\cite{Savova2016}) reportou que uma proporção considerável dos genes humanos (~25\%) apresentam expressão mono-alélica (MAE)\footnote{Para a maioria dos genes, em organismos diploides, acredita-se que a expressão gênica ocorre simultaneamente para os dois alelos. Para outros, apenas um dos alelos, o materno ou o paterno, é expresso, ao passo que o outro é inativado. Esse padrão é alcançado através de modificações epigenéticas, assim levando a uma expressão mono-alélica que é mantida ao longo das divisões mitóticas.}. Eles reportam, ainda, que dentre os genes que têm assinaturas de SBLP, existe um enriquecimento de genes com assinatura MAE. Nós confirmamos essa relação com o nosso achado de excesso de genes MAE entre os genes mais extremos.
-
-Trata-se de um achado  que, conforme argumentado por \textcite{Savova2016}, pode indicar uma possível ligação evolutiva entre MAE e vantagem do heterozigoto: muitos dos genes MAE codificam proteínas expressas na superfície celular, e modulam interações entre a célula e o ambiente ao redor, incluindo outras células. Heterozigose em um sítio MAE poderia levar a diferentes alelos inativados em células de um mesmo tecido, diminuindo a possibilidade de uma \enquote{monocultura} e assim reduzindo a susceptibilidade do tecido como um todo a agentes infecciosos (\cite{Savova2016}). Por outro lado, \textcite{Savova2016} discutem que é inteiramente possível que expressão mono-alélica e manutenção de diversidade através de seleção sejam fenômenos independentes que têm como alvo os mesmos componentes moleculares. 
-
-Finalmente, para alguns alvos de SBLP já foram reportados casos em que uma variante causa uma mudança de tecido em que o gene é expresso. Como exemplo temos o gene \emph{B4galnt2}: em camundongos, uma variante causa a mudança de expressão do local habitual (epitélio intestinal) para outro (endotélio vascular). O ortólogo desse gene em humanos (\emph{B4GALNT2}) é um dos nossos genes candidatos, discutidos no Capítulo 1. Outro exemplo é o \emph{HLA-G}, também entre os nossos candidatos e com uma ampla literatura descrevendo padrões complexos de expressão (p.ex. \cite{Tan2005}). Assim, testamos se tais padrões são recorrentes entre nossos genes e detectamos um excesso significativo de genes com expressão em apenas um tecido humano: 12 com expressão na glândula adrenal e 25 com expressão no pulmão. 
-
-Em suma, muitos dos alvos de SBLP são genes codificadores de proteínas -- a maioria nunca foi reportada antes em estudo de seleção balanceadora -- e não encontramos evidência de excesso de funções regulatórias entre as janelas que não incluem genes. Por outro lado, encontramos enriquecimento para genes com MAE e com expressão tecido-específica, apontando que talvez haja, sim, um excesso de alvos de SBLP com funções regulatórias. 
-
-
+Conteúdo aqui.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Variação deletéria em regiões e genes com assinaturas de SBLP}
+\section{Subseção}
 
-Além da seleção balanceadora e da seleção positiva, seleção contra mutações deletérias constitui um processo evolutivo fundamental, capaz de influenciar a variação quantitativa para caráteres de importância ecológica e médica. Com o influxo constante de novas mutações deletérias que surgem nas populações, algumas irão segregar transitoriamente dentro das populações, resultando num balanço entre mutação e seleção que é influenciado pela taxa de mutação, pelo tamanho populacional efetivo e pela intensidade de seleção sobre a mutação. Entretanto, a contribuição de tais variantes deletérias sobre caráteres moldados por variação genética quantitativa permanece pouco compreendido \parencite{Mitchell-Olds2007}. Diversos estudos de associação em humanos têm identificado polimorfismos segregando em frequências intermediárias que influenciam variação de traços complexos \parencite{Mitchell-Olds2007}\footnote{Aqui, refiro-me a traços que, acredita-se, resultam de variação genética em múltiplos genes e suas interações com fatores ambientais e comportamentais \parencite{Mitchell-Olds2007}.}.
-
-No Capítulo 2, mostramos que genes com assinaturas extremas de seleção balanceadora têm maior carga genética do que regiões evoluindo presumivelmente de forma neutra. Os controles levaram em conta o fato de que o espectro de frequências alélicas dos genes balanceados tem proporcionalmente menos variantes raras do que o controle genômico. Usamos três métricas diferentes para quantificar este excesso: duas delas contam diretamente o número de variantes potencialmente deletérias dividido pelo número de variantes neutras, e a outra atribui uma medida 
-para cada variante, que quantifica o quão deletéria ela é. Assim, as distribuições dessas medidas para genes balanceados e controles pôde ser comparada. 
-
-As três estimativas são mais elevadas para os genes balanceados do que para os controles, com poucas exceções. Mais ainda, quando removemos os genes HLA -- que têm muitos sítios mantidos de forma adaptativa e poderiam confundir a interpretação das estimativas -- os resultados foram qualitativamente semelhantes. Avaliamos, por fim, o impacto que os sítios potencialmente selecionados nos  genes balanceados têm sobre essas estimativas, e vimos que as observações se mantêm mesmo quando eles são removidos.
-
-Em suma, há evidência, através de três diferentes métricas, de um excesso de carga genética na vizinhança de regiões com assinaturas de seleção balanceadora. Esse resultado pode ser interpretado de duas  formas: (1) como uma evidência de \emph{sheltered load}\footnote{A ideia de que variantes deletérias recessivas raramente estarão em homozigose quando estão nos genes HLA, pois a região tem alta heterozigose. Assim, tais variantes deletérias estariam protegidas da seleção purificadora (\cite{VanOosterhout2009}).}; ou (2) como evidência de efeito carona das variantes deletérias com os polimorfismos balanceados, conforme explicado na Figura 1 do Capítulo 2. 
-
-Nossos resultados não permitem escolher entre uma ou outra explicação. Entretanto, \cite{Lenz2013} mostrou, através de simulações de genes HLA com múltiplos sítios selecionados e suas regiões adjacentes, que mesmo em um modelo aditivo (não-recessivo), espera-se um aumento da carga genética em regiões adjacentes aos genes HLA, e tal efeito diminui quanto maior é a distância em relação aos genes. Se extrapolarmos essas observações para outros genes sob seleção balanceadora, é plausível supor que o mesmo ocorre na vizinhança de outros alvos de seleção balanceadora.
-
-A fim de discernir entre esses dois possíveis cenários, uma opção seria : (1) verificar com simulações se sob modelo de seleção balanceadora não com múltiplos, mas apenas um, sítio selecionado, os mesmo padrões são observados e; (2) se existe um excesso de associações a doenças nas regiões genômicas dos genes sob seleção balanceadora; (3) se o excesso de carga genética é menor (mas ainda significativo) para genes vizinhos aos genes balanceados e/ou fixando-se janelas genômicas em torno dos genes e verificando se a carga genética diminui com a distância em relação ao gene-alvo.
-
-Ainda que permaneçam algumas questões em aberto, nosso trabalho é uma  contribuição para dois campos estimulantes da biologia evolutiva: o estudo do acúmulo de mutações deletérias no genoma humano e o estudo da importância evolutiva da seleção balanceadora para a evolução humana. 
 %
 %
 %
@@ -135,40 +53,22 @@ Ainda que permaneçam algumas questões em aberto, nosso trabalho é uma  contri
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \section{Perspectivas}
+
+Perspectivas é uma parte importante.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Conciliando assinaturas de seleção e fenótipos}
+\subsection{Subseção}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%variaçnao genética é ótima de estudar, mas nnao mostra relação causal entre um loco selecionado, seu efeito fenotípico e a aptdião resutlante. 
 
 \begin{quote}
-\enquote{\emph{(...) genome-wide scans are a hatchet, whereas what we need now is a scalpel. In-depth follow-up studies of individual outlier loci can be one such scalpel, more precisely defining important population genetic parameters such as the timing and magnitude of selection, the geographic distribution of selected variation, the interaction of population demograhic history, recombination, and selection in shaping patterns of variation, and the functional form of selection acting on individual outlier loci}} (\cite{Akey2009})
+\enquote{\emph{(...) algo inspirador}} (\cite{Darwin1958})
 \end{quote} 
 
-	A rigor, evidências de evolução adaptativa não demonstram que uma dada substituição ou polimorfismo é adaptativo ao nível fenotípico, mas indicam a região onde ele provavelmente poderá ser encontrado. Estudos baseados em genética de populações são capazes de identificar genes alvo de seleção, i.e., que evoluíram de forma não-neutra ao longo da história evolutiva humana (Capítulo 1), mas não são capazes de fornecer, por si só, informações acerca dos traços fenotípicos que representam os verdadeiros alvos de seleção (\cite{Mitchell-Olds2007}). 
-  
-	 Até o momento, em muito poucos casos conseguiu-se traçar a relação causal entre um polimorfismo e um fenótipo de interesse, pois, tanto na pesquisa quanto na prática clínica, a capacidade de detectar variantes genéticas suplanta, em muito, a habilidade de sistematicamente avaliar os potenciais efeitos de tais variantes \parencite{Kircher2014}. Mesmo havendo essa enorme defasagem, com a publicação de novos catálogos de genes/regiões genômicas candidatas à ação da seleção balanceadora, ensaios funcionais têm se tornado mais comuns. 
-     
-     Por exemplo, em um estudo elegante, \textcite{Chakraborty2015} mostraram como um polimorfismo em um gene pleiotrópico -- codificador da enzima aldeído-desidrogenase -- é ativamente mantido devido a diferenças no nível de concentração alcóolica em frutas em ambientes diversos ocupados por \emph{Drosophila}. A enzima tem duas funções: metabolismo de etanol e de outros aldeídos decorrentes da fosforilação oxidativa, sendo esta a provável função ancestral e aquela a função derivada.
-As duas variantes têm aptidões diferentes em diferentes hábitats, dependendo do regime alimentar da mosca. Os autores conseguiram identificar uma substituição de aminoácido responsável pelas duas variantes da enzima, e verificaram a eficácia das duas variantes sobre diferentes substratos, assim revelando a aptidão de cada variante em dois tipos de ambientes.
-
-Um outro exemplo é o do gene \emph{ERAP2}, que codifica uma proteína envolvida na via de apresentação de antígenos pelas moléculas de MHC classe I. Esse gene apresenta assinaturas  de SBLP de acordo com nosso estudo (Tabela S8, Capítulo 1) e já tinha sido revelado como candidato por \textcite{Andres2009}. Em um estudo posterior (\cite{Andres2010}) foi demonstrado que a seleção balanceadora mantém dois haplótipos, A e B, segregando em frequências intermediárias, e que um deles resulta em uma proteína truncada. O estudo mostra, ainda, que homozigotos para esse haplótipo resultam em expressão reduzida de moléculas de MHC de classe I na superfície de linfócitos T. Apesar de a pressão seletiva para a manutenção dessa variante ser ainda desconhecida, o estudo mostrou evidências bioinformáticas, moleculares, celulares e imunológicas que mostram que o gene pode ter sofrido seleção balanceadora, o impacto do provável sítio selecionado sobre a proteína, e uma consequência \emph{downstream} dessa variação para a apresentação de antígenos. 
-  
-  Ainda que elucidar a relação causal entre genótipo e fenótipo como nos exemplos acima esteja além do escopo do presente trabalho, demos importantes passos nessa direção ao explorar propriedades das regiões candidatas. No Capítulo 1, dentro dessas limitações, buscamos explorar a base biológica dos alvos de seleção balanceadora, ao olharmos para as categorias funcionais às quais eles pertencem, para a proporção de sítios codificadores, e dentre esses, os sítios não-sinônimos. No Capítulo 2, analisamos em maior detalhe as propriedades dos sítios contidos nas regiões-alvo de seleção balanceadora. Assim, pudemos testar hipóteses acerca do acúmulo de mutações deletérias em regiões sob seleção balanceadora e aprofundamos nossa compreensão acerca dos potenciais alvos de seleção balanceadora no genoma humano.
-  
-   Acreditamos que com o ressurgimento de interesse por alvos de seleção balanceadora em humanos na literatura, muitos dos genes candidatos levantados  no nosso trabalho serão alvo de investigação mais detalhada tanto acerca de padrões genômicos como acerca de possíveis efeitos fenotípicos e mutações causais em estudos funcionais.
-
+Mais conteúdo.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Potencial das estatísticas NCD em futuros estudos}
-
-
-	No Capítulo 1, mostrei que as duas novas estatísticas que propusemos -- \emph{NCD}1 e \emph{NCD}2 -- têm poder elevado em relação a outras estatísticas comumente usadas para a detecção de assinaturas de seleção balanceadora. 
-  
-    Uma limitação no que tange a extrapolação de nossas observações sobre o poder das estatísticas NCD para outras espécies é que as análises de poder requerem simulações -- neutras e com seleção -- cujos parâmetros podem variar muito entre espécies. Por outro lado, o trabalho do Capítulo 1 deixa em aberto a possibilidade de que \emph{NCD}1 e \emph{NCD}2 sejam utilizados em outras espécies, dada a sua extrema facilidade de implementação e interpretação de seus resultados. As simulações para outras espécies são necessárias no sentido de determinar o poder da estatística para o cenário em questão, e também para definir filtros adequados, como os que propusemos na extensa parte de métodos do trabalho.
-   
-    Como exemplo, Teixeira e colaboradores (in prep)\footnote{Sou co-autora deste trabalho.} têm trabalhado em um estudo que discute as potenciais implicações biológicas de alvos de seleção balanceadora nos \enquote{grandes símios}\footnote{\emph{Great Apes}, incluindo chimpanzé, bonobo, gorila e orangotango.}. Tal estudo tem utilizado as estatísticas NCD, valendo-se de modelos demográficos específicos e detalhados para as espécies em questão para avaliar o poder nesses cenários, bem como os filtros apropriados. Essa aplicação pra outras espécies mostra o potencial das nossas estatísticas de serem utilizas por geneticistas evolutivos interessados em assinaturas de seleção que afetem o espectro de frequências alélicas. 
+\subsection{Potencial dessa coisa que eu estudei pra futuros estudos}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -176,5 +76,4 @@ Um outro exemplo é o do gene \emph{ERAP2}, que codifica uma proteína envolvida
 \renewcommand*{\bibfont}{\footnotesize}
 \printbibliography[heading=bibintoc] %%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\bibliography{Thesis}
 \end{refsection}

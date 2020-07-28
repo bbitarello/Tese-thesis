@@ -9,6 +9,6 @@ Feel free to use and modify.
 git clone 
 ```
 
-You will need to know some Tex but you should end up with [a very pretty thesis]().
+You will need to know some Tex but you should end up with [a very pretty thesis](https://teses.usp.br/teses/disponiveis/41/41131/tde-02122016-171335/publico/Barbara_Bitarello_SIMPL.pdf).
 
 Enjoy!

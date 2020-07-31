@@ -1,7 +1,7 @@
 # THESIS
 A template for writing your PhD in Latex format 
 
-I got my PhD at the University of São Paulo (BRazil) so my thesis is mostly in Portuguese (Intro & Conclusions, first and final chapters). The meat of the thesis (two middle chapters) are manuscripts I had at the time.
+I got my PhD at the University of São Paulo (Brazil) so my thesis is mostly in Portuguese (Intro & Conclusions, first and final chapters). The meat of the thesis (two middle chapters) are manuscripts I had at the time.
 
 Feel free to use and modify. Please fork so I can get some credit. (-:
 
